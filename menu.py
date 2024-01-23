@@ -1,7 +1,13 @@
-n = int(input('Enter a number:'))
+from Calc import *
+
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+n = int(input('Enter a choice:'))
 if n == 1:
-    add()
+    add(a,b)
 elif n==2:
-    subtract()
-else: 
-    multiply()
+    subtract(a,b)
+elif n==3: 
+    multiply(a,b)
+else:
+    divide(a,b)
